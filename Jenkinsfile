@@ -8,7 +8,7 @@ pipeline {
         IMAGE_REPO = "registry.cn-hangzhou.aliyuncs.com/haoshuwei/${gitlabSourceRepoName}" // change it to be your docker registry
         IMAGE_TAG = 'UNKNOWN'
         KUBE_NAMESPACE = "preview-${gitlabSourceRepoName}-${gitlabMergeRequestIid}"
-        dingTalkToken = <your dingTalk token>  // change it to be your dingTalk token
+        dingTalkToken = '<your dingTalk token>'  // change it to be your dingTalk token
     }
     
     options {
