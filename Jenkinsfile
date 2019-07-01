@@ -22,6 +22,7 @@ pipeline {
         stage('Maven Build') {
             steps {
                 container("maven") {
+		    sh("git branch")
                     sh("cat README.md")
                 }
             }
