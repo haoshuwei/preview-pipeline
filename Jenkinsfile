@@ -19,9 +19,9 @@ pipeline {
             }
         }
         
-        stage('Maven Build') {
+        stage('Test') {
             steps {
-                container("maven") {
+                container("jnlp") {
 		    sh("git branch")
                     sh("cat README.md")
                 }
